@@ -3,7 +3,7 @@ layout: post
 title: EPPS 6356 Data Visualization
 ---
 
-Political Regime types and Cyberattacks
+Political Regime Types and Cyberattacks
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
