@@ -7,6 +7,7 @@ Political Regime Types and Cyberattacks
 
 [Cyberattacks by country](/images/Rplot01.png)
 
+[The Duration of Cyberattacks](/images/Rplot03.png)
 
-![_config.yml]({{ site.baseurl }}/images/Rplot02.png)
+[Scatterplot of Regime type and Cyberattacks](/images/
 
