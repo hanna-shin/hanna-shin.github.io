@@ -3,7 +3,7 @@ layout: post
 title: Data Explorer
 ---
 
-Everything here is outcomes of classes! 
+Everything here is my own outcomes! 
 
 ### EPPS 6356 Data visualization
 #### Political Regime Types and Cyberattacks
