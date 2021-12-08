@@ -11,6 +11,6 @@ Political Regime Types and Cyberattacks
 
 [Scatterplot of Regime Type and Cyberattacks](/images/Rplot04.png)
 
-[Result of Regression](/imaages/model.html)
+[Result of Regression](/images/model.pdf)
 
 [Coefficient plots](/images/Rplot05.png)
