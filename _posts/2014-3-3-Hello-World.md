@@ -9,5 +9,5 @@ Political Regime Types and Cyberattacks
 
 [The Duration of Cyberattacks](/images/Rplot03.png)
 
-[Scatterplot of Regime type and Cyberattacks](/images/
+[Scatterplot of Regime type and Cyberattacks](/images/Rplot04.png)
 
