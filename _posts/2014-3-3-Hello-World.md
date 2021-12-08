@@ -1,6 +1,6 @@
 ---
 layout: post
-title:
+title: Data Explorer
 ---
 
 ### Political Regime Types and Cyberattacks
