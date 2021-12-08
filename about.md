@@ -8,8 +8,7 @@ My name is Hanna Shin, PhD in Political Science, the University of Texas at Dall
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[hanna.shin@utdallas.edu](mailto:hanna.shin@utallas.edu)
+[hanna.shin@utdallas.edu](mailto:hanna.shin@utdallas.edu)
