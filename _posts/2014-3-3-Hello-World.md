@@ -1,9 +1,9 @@
 ---
 layout: post
-title: EPPS 6356 Data Visualization
+title:
 ---
 
-Political Regime Types and Cyberattacks
+### Political Regime Types and Cyberattacks
 
 [Cyberattacks by country](/images/Rplot01.png)
 
