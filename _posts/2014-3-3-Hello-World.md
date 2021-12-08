@@ -3,7 +3,10 @@ layout: post
 title: Data Explorer
 ---
 
-### Political Regime Types and Cyberattacks
+Everything here is outcomes of classes! 
+
+### EPPS 6356 Data visualization
+#### Political Regime Types and Cyberattacks
 
 [Cyberattacks by country](/images/Rplot01.png)
 
