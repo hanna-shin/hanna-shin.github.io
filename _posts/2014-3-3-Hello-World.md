@@ -13,3 +13,4 @@ Political Regime Types and Cyberattacks
 
 [Result of Regression](/imaages/model.html)
 
+[Coefficient plots](/images/Rplot05.png)
