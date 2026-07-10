@@ -3,111 +3,376 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Hanna Shin</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Georgia, "Times New Roman", serif;
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 24px;
-      line-height: 1.6;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
       color: #222;
-      background: #fff;
+      background: #ffffff;
+      line-height: 1.7;
     }
+
+    a {
+      color: #1f4f78;
+    }
+
     header {
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 25px;
-      margin-bottom: 35px;
+      border-bottom: 1px solid #dddddd;
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
-    h1 {
-      font-size: 42px;
-      margin-bottom: 5px;
+
+    nav {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    h2 {
-      margin-top: 36px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 6px;
-    }
-    nav a {
-      margin-right: 18px;
-      color: #0056a6;
+
+    .site-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #222;
       text-decoration: none;
+    }
+
+    .nav-links a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: #333;
       font-size: 15px;
     }
-    nav a:hover {
-      text-decoration: underline;
+
+    .nav-links a:hover {
+      color: #1f4f78;
     }
-    .title {
+
+    main {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 70px 24px;
+    }
+
+    .hero {
+      min-height: 65vh;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 58px;
+      margin: 0 0 12px;
+      line-height: 1.1;
+    }
+
+    .hero h2 {
+      font-size: 22px;
+      font-weight: 400;
+      color: #555;
+      margin: 0 0 24px;
+    }
+
+    .hero p {
       font-size: 18px;
+      max-width: 680px;
+    }
+
+    .profile-placeholder {
+      width: 260px;
+      height: 320px;
+      background: #eeeeee;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #777;
+      text-align: center;
+      padding: 20px;
+    }
+
+    section {
+      padding: 65px 0;
+      border-top: 1px solid #eeeeee;
+    }
+
+    section h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
       margin-top: 0;
     }
-    .section {
-      margin-bottom: 28px;
+
+    .research-grid,
+    .teaching-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      border: 1px solid #dddddd;
+      padding: 24px;
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .publication {
+      margin-bottom: 24px;
+    }
+
+    .publication-title {
+      font-weight: 700;
+    }
+
+    .button {
+      display: inline-block;
+      background: #1f4f78;
+      color: #ffffff;
+      padding: 11px 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background: #163b5b;
+    }
+
+    footer {
+      border-top: 1px solid #dddddd;
+      text-align: center;
+      padding: 28px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 750px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        margin-top: 12px;
+      }
+
+      .nav-links a {
+        margin: 0 14px 0 0;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 44px;
+      }
+
+      .profile-placeholder {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .research-grid,
+      .teaching-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Hanna Shin</h1>
-  <p class="title">
-    Lecturer<br>
-    School of Political Science, Public Affairs, Legal and Security Studies<br>
-    The University of Texas Rio Grande Valley
-  </p>
+  <header>
+    <nav>
+      <a class="site-name" href="#home">Hanna Shin</a>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-<section id="about" class="section">
-  <h2>About</h2>
-  <p>
-    I am a political scientist whose research examines climate change politics,
-    environmental policy, public opinion, and human rights framing.
-  </p>
-</section>
+  <main>
 
-<section id="research" class="section">
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Climate change politics</li>
-    <li>Environmental policy</li>
-    <li>Public opinion</li>
-    <li>Human rights</li>
-    <li>Gender and political behavior</li>
-  </ul>
-</section>
+    <section class="hero" id="home">
+      <div>
+        <h1>Hanna Shin</h1>
 
-<section id="publications" class="section">
-  <h2>Publications and Working Papers</h2>
-  <p>Coming soon.</p>
-</section>
+        <h2>
+          Political Scientist | Environmental Politics | Public Opinion
+        </h2>
 
-<section id="teaching" class="section">
-  <h2>Teaching</h2>
-  <p>
-    I teach courses in American politics, Texas government, environmental policy,
-    human rights, and research methods.
-  </p>
-</section>
+        <p>
+          I am a political scientist whose research focuses on environmental
+          politics, climate change attitudes, public opinion, human rights,
+          and political behavior.
+        </p>
 
-<section id="cv" class="section">
-  <h2>CV</h2>
-  <p>CV coming soon.</p>
-</section>
+        <a class="button" href="#research">View Research</a>
+        <a class="button" href="#contact">Contact Me</a>
+      </div>
 
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: hanna.shin@utrgv.edu</p>
-</section>
+      <div class="profile-placeholder">
+        Profile photo will go here
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+
+      <p>
+        I hold a Ph.D. in Political Science and an M.S. in Social Data
+        Analytics and Research from The University of Texas at Dallas.
+        My research examines how political identities, framing, gender,
+        ideology, and institutional conditions shape public attitudes toward
+        climate change and environmental policy.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+
+      <div class="research-grid">
+        <div class="card">
+          <h3>Climate Change and Public Opinion</h3>
+          <p>
+            My research investigates how individuals understand climate change
+            and how framing influences concern, perceived seriousness, and
+            support for climate policy.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Gender and Political Attitudes</h3>
+          <p>
+            I examine gender differences in climate attitudes and how political
+            ideology, partisanship, identity, and risk perception shape these
+            differences.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Human Rights Framing</h3>
+          <p>
+            This project studies whether presenting climate change as a human
+            rights issue changes perceptions of urgency and policy priority.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Environmental Politics in the Rio Grande Valley</h3>
+          <p>
+            My regional research focuses on water scarcity, drought,
+            infrastructure, economic development, and public opinion in South
+            Texas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications and Working Papers</h2>
+
+      <div class="publication">
+        <div class="publication-title">
+          Human Rights Framing and Climate Change Attitudes
+        </div>
+        <div>Working paper.</div>
+      </div>
+
+      <div class="publication">
+        <div class="publication-title">
+          Gender Differences in Climate Change Concern
+        </div>
+        <div>Working paper.</div>
+      </div>
+
+      <div class="publication">
+        <div class="publication-title">
+          Civil Liberties and Carbon Emissions
+        </div>
+        <div>Working paper.</div>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+
+      <div class="teaching-grid">
+        <div class="card">
+          <h3>Texas Government</h3>
+          <p>
+            State institutions, political culture, public policy, elections,
+            representation, and federalism.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Human Rights</h3>
+          <p>
+            International human rights institutions, political theory,
+            implementation, and contemporary policy challenges.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>U.S. Environmental Policy</h3>
+          <p>
+            Environmental institutions, regulation, federalism, climate
+            politics, and policy development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>
+        Email:
+        <a href="mailto:hanna.shin@example.com">
+          hanna.shin@example.com
+        </a>
+      </p>
+
+      <p>
+        University of Texas Rio Grande Valley
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Hanna Shin
+  </footer>
 
 </body>
 </html>
