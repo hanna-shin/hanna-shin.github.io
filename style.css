@@ -61,20 +61,16 @@ footer {
   font-size: 14px;
 }
 
+.profile-container {
+transform: translateY(-15px);
+}
+
 @media (max-width: 700px) {
   .home-layout {
     grid-template-columns: 1fr;
-  }
-
-  .profile-photo {
-    max-width: 250px;
   }
 
   nav a {
     display: inline-block;
     margin-bottom: 8px;
   }
-
-.profile-container {
-transform: translateY(-15px);
-}
