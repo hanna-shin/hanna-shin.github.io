@@ -47,6 +47,7 @@ main {
 .profile-photo {
   width: 100%;
   height: auto;
+  margin-top: -8px;
 }
 
 h2 {
