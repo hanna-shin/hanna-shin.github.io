@@ -75,4 +75,7 @@ footer {
     display: inline-block;
     margin-bottom: 8px;
   }
+
+.profile-container {
+transform: translateY(-15px);
 }
