@@ -41,7 +41,7 @@ main {
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 45px;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .profile-photo {
