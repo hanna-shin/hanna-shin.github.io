@@ -49,6 +49,11 @@ main {
   height: auto;
 }
 
+main h1 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
 h2 {
   font-size: 28px;
   font-weight: normal;
@@ -113,3 +118,4 @@ main a:active {
     display: inline-block;
     margin-bottom: 8px;
   }
+}
