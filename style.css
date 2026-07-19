@@ -83,6 +83,11 @@ main a:active {
     color: #1f5fbf;
 }
 
+.publication-section ol {
+    padding-left: 1.3em;
+    margin-top: 0;
+}
+
 @media (max-width: 700px) {
   .home-layout {
     grid-template-columns: 1fr;
