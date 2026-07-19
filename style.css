@@ -88,6 +88,22 @@ main a:active {
     margin-top: 0;
 }
 
+.teaching-section h2,
+.publication-section h3 {
+  font-size: 18px;
+  margin-top: 28px;
+  margin-bottom: 14px;
+}
+
+.course-list {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.course-list li {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 700px) {
   .home-layout {
     grid-template-columns: 1fr;
